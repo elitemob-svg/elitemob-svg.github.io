@@ -1,0 +1,62 @@
+/* --- Réinitialisation des styles de base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* --- Style de l'en-tête --- */
+header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Dégradé de couleur */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+/* --- Style de la navigation --- */
+nav {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Style du contenu principal --- */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* --- Style du pied de page --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
