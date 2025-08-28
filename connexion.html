@@ -339,3 +339,22 @@
     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxpaXV4bGprcGtjaXdqdWZkbmptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzMzc4NDMsImV4cCI6MjA3MTkxMzg0M30.qMa2L763iAZFv03VBb1ogycAX6DQKBN6Mt5mk4RpF5o'; // <- Remplacez par VOTRE clé "anon public"
     window.supabase = supabase.createClient(supabaseUrl, supabaseKey);
 </script>
+// Connexion réelle avec Supabase
+document.getElementById('loginForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password
+    });
+
+    if (error) {
+        alert("Erreur de connexion: " + error.message);
+    } else {
+        // Redirection vers le tableau de bord
+        window.location.href = 'dashboard.html';
+    }
+});
