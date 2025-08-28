@@ -333,3 +333,9 @@
     </script>
 </body>
 </html>
+<script>
+    // ⚠️ REMPLACEZ CES VALEURS PAR LES VÔTRES !
+    const supabaseUrl = 'https://liiuxljkpkciwjufdnjm.supabase.co'; // <- Remplacez par VOTRE URL
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxpaXV4bGprcGtjaXdqdWZkbmptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzMzc4NDMsImV4cCI6MjA3MTkxMzg0M30.qMa2L763iAZFv03VBb1ogycAX6DQKBN6Mt5mk4RpF5o'; // <- Remplacez par VOTRE clé "anon public"
+    window.supabase = supabase.createClient(supabaseUrl, supabaseKey);
+</script>
